@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project was completed as part of our university Data Science coursework in collaboration with my teammates **Buthaina Mohammed** and **Layan Alharthi**.
+This project was completed as part of a university Data Science course in collaboration with my teammates **Buthaina Mohammed** and **Layan Alharthi**.
 
 The objective of this project was to analyze the IMDb Top 250 Movies dataset using Python to uncover insights into movie ratings, genres, release years, and box office performance through data cleaning, exploratory data analysis (EDA), and visualization.
 

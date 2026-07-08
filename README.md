@@ -28,6 +28,15 @@ The objective of this project was to analyze the IMDb Top 250 Movies dataset usi
 
 https://www.kaggle.com/datasets/rajugc/imdb-top-250-movies-dataset
 
+## Data Cleaning
+
+The dataset was cleaned before analysis by:
+
+- Handling missing values.
+- Removing duplicate records.
+- Converting data types where necessary.
+- Formatting numerical values.
+
 ## Visualizations
 
 ### Movie Ratings Distribution

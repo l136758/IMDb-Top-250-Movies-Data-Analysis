@@ -50,7 +50,7 @@ https://www.kaggle.com/datasets/rajugc/imdb-top-250-movies-dataset
 ## Project Files
 
 - **Source Code:** [imdb_top250_analysis.py](src/imdb_top250_analysis.py)
-- **Final Report:** [Group#1_Report_Project.pdf](report/Group#1_Report_Project.pdf)
+- **Final Report:** [IMDb Top 250 Report](report/imdb_top250_report.pdf)
 
 ## How to Run
 

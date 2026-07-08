@@ -28,6 +28,22 @@ The objective of this project was to analyze the IMDb Top 250 Movies dataset usi
 
 https://www.kaggle.com/datasets/rajugc/imdb-top-250-movies-dataset
 
+## Visualizations
+
+### Movie Ratings Distribution
+![Movie Ratings](images/MovieRatings.png)
+
+### Box Office Performance by Genre
+![Box Office Genre](images/BoxOfficeGenre.png)
+
+### Average Rating Over Years
+![Average Rating Over Years](images/AvgRatingOverYears.png)
+
+## Project Files
+
+- **Source Code:** [ProjectCodeFinalCopy.py](src/ProjectCodeFinalCopy.py)
+- **Final Report:** [Group#1_Report_Project.pdf](report/Group#1_Report_Project.pdf)
+
 ## Team Members
 
 - Layan Alazwari

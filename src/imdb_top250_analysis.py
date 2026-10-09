@@ -1,9 +1,15 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Paths relative to this script, so it runs from any folder
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "..", "data")
+IMAGES_DIR = os.path.join(BASE_DIR, "..", "images")
+
 
 # Task 1: Reading the csv file that contains the dataset
-data = pd.read_csv("IMDB Top 250 Movies.csv",
+data = pd.read_csv(os.path.join(DATA_DIR, "IMDB Top 250 Movies.csv"),
                    na_values=["Not Available", 
                               "Unrated", "Not Rated"],
                    thousands=',')
@@ -57,7 +63,7 @@ genre_boxOffice.plot.bar()
 plt.title('Average Box Office per Genre')
 plt.xlabel('Genre')
 plt.ylabel('Average Box Office')
-plt.savefig('BoxOfficeGenre.png', dpi=400)
+plt.savefig(os.path.join(IMAGES_DIR, 'BoxOfficeGenre.png'), dpi=400)
 plt.show()
 
 # Task 4: Histogram - Visualization
@@ -65,7 +71,7 @@ data["rating"].plot.hist(bins=10, edgecolor='black', figsize=(8,5),
                          title="Distribution of Movie Ratings")
 plt.xlabel("Rating")
 plt.ylabel("Number of Movies")
-plt.savefig('MovieRatings.png', dpi=400)
+plt.savefig(os.path.join(IMAGES_DIR, 'MovieRatings.png'), dpi=400)
 plt.show()
 
 # Task 4: Line Plot - Visualization
@@ -77,11 +83,11 @@ plt.title('Average Movie Ratings Over the Years', fontname='Times New Roman'
           , fontsize=16)
 plt.xlabel('Year', fontname='Times New Roman', fontsize=15)
 plt.ylabel('Average IMDB Rating', fontname='Times New Roman', fontsize=15)
-plt.savefig('AvgRatingOverYears.png', dpi=400)
+plt.savefig(os.path.join(IMAGES_DIR, 'AvgRatingOverYears.png'), dpi=400)
 plt.show()
 
  
 # Saving a clean CSV with all the changes
-data.to_csv('CleanedResult.csv', index=False)
+data.to_csv(os.path.join(DATA_DIR, 'CleanedResult.csv'), index=False)
 print("The final result has been saved!")
 

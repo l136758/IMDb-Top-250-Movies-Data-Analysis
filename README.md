@@ -33,7 +33,7 @@ https://www.kaggle.com/datasets/rajugc/imdb-top-250-movies-dataset
 The dataset was cleaned before analysis by:
 
 - Handling missing values.
-- Removing duplicate records.
+- Checking for duplicate records (none were found).
 - Converting data types where necessary.
 - Formatting numerical values.
 
@@ -52,7 +52,7 @@ The dataset was cleaned before analysis by:
 
 - Most IMDb Top 250 movies have ratings between **8.0 and 8.5**, while ratings above **9.0** are rare.
 - Action and Animation genres have the highest average box office performance.
-- Western and Film-Noir genres have the lowest average box office revenue.
+- Western (2 movies) and Film-Noir (1 movie) show the lowest average box office revenue, but these groups are too small to draw conclusions from.
 - Average movie ratings fluctuate over the years with no clear long-term trend.
 - The dataset required preprocessing to handle missing values and inconsistent formatting before analysis.
 
